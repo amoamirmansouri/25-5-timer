@@ -1,11 +1,15 @@
-""" a timer 
+""" a timer for myself
 """
 from timer import timer      
-       
-counter: int = 0
-if __name__ == "__main__":
+import tkinter
+    
+    
+    
+   
+def main():
+    counter: int = 0
     while True:
-        timer(1500)
+        timer()
         counter += 0.5
         print(f'< u stady for {counter*2}round, ({counter} of hour) >')
         aging:str = input("do u want to contnue(y/n)? ")
@@ -16,3 +20,13 @@ if __name__ == "__main__":
             print(f'lets go for round {counter*2+1}')
             
    
+# window = tkinter.Tk()
+# window.title("timer :)")
+if __name__ == "__main__":
+    
+    main()
+    # b1 = tkinter.Button()
+    # window.geometry("250x76")
+    # window.resizable(height=False,width=False)
+    # window.mainloop()
+    
